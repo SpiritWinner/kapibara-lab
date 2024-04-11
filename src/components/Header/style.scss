@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 57px 260px;
-  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 
   &-logo {
@@ -17,6 +16,7 @@
     font-weight: 500;
     margin-inline: 12px;
     padding: 8px 24px;
+    cursor: pointer;
 
     &:hover {
       color: #4F58C9;
@@ -40,15 +40,11 @@
     font-weight: 400;
     color: #4c4c4c;
     line-height: 18.2px;
-
-    &--bold {
-      line-height: 23.4px;
-      font-size: 18px;
-      font-weight: 600;
-    }
   }
 }
 
-p {
-  margin: 0;
+.bold {
+  line-height: 23.4px;
+  font-size: 18px;
+  font-weight: 600;
 }
