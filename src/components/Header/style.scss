@@ -1,0 +1,54 @@
+.Header {
+
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 57px 260px;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+
+  &-logo {
+    pointer-events: none;
+  }
+
+  &-link {
+    font-size: 18px;
+    font-weight: 500;
+    margin-inline: 12px;
+    padding: 8px 24px;
+
+    &:hover {
+      color: #4F58C9;
+      background-color: #E9EAF9;
+      border-radius: 4px;
+    }
+  }
+
+  &-number {
+    display: flex;
+    gap: 15px;
+  }
+
+  &-log {
+    display: flex;
+    gap: 15px;
+  }
+
+  &-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4c4c4c;
+    line-height: 18.2px;
+
+    &--bold {
+      line-height: 23.4px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+p {
+  margin: 0;
+}
