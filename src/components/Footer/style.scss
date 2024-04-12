@@ -1,0 +1,14 @@
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(79, 88, 201, 1);
+    padding: 60px 260px;
+
+    &-logo {
+        fill: #fff;
+    }
+
+    &-text {
+        color: #fff;
+    }
+}
