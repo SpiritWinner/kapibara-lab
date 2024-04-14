@@ -13,18 +13,32 @@ function Galerea () {
     const cn = bem('grid');
 
     return (
-        <div className='Galerea'>
+        <section className='Galerea' id='gallery'>
             <h2 className='Galerea-title'>Галерея</h2>
-            <section className={cn()}>
-                <img className={cn('img1')} src={img1} />
-                <img className={cn('img2')} src={img2} />
-                <img className={cn('img3')} src={img3} />
-                <img className={cn('img4')} src={img4} />
-                <img className={cn('img5')} src={img5} />
-                <img className={cn('img6')} src={img6} />
-                <img className={cn('img7')} src={img7} />
-            </section> 
-        </div>
+            <div className={cn()}>
+                <div class="image-wrapper">
+                    <img className={cn('img1')} src={img1} alt="Image 1" />
+                </div>
+                <div class="image-wrapper">
+                    <img className={cn('img2')} src={img2} alt="Image 2" />
+                </div>
+                <div class="image-wrapper">
+                    <img className={cn('img3')} src={img3} alt="Image 3" />
+                </div>
+                <div class="image-wrapper">
+                    <img className={cn('img4')} src={img4} alt="Image 4" />
+                </div>
+                <div class="image-wrapper">
+                    <img className={cn('img5')} src={img5} alt="Image 5" />
+                </div>
+                <div class="image-wrapper">
+                    <img className={cn('img6')} src={img6} alt="Image 6" />
+                </div>
+                <div class="image-wrapper">
+                    <img className={cn('img7')} src={img7} alt="Image 7" />
+                </div>
+            </div> 
+        </section>
     );
 }
 

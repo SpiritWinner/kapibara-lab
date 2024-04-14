@@ -7,32 +7,19 @@
   padding: 57px 260px;
   box-sizing: border-box;
 
+  @media (max-width: 899px) {
+    padding: 30px 20px;
+  }
+
   &-logo {
     pointer-events: none;
-  }
+    display: flex;
+    gap: 15px;
 
-  &-link {
-    font-size: 18px;
-    font-weight: 500;
-    margin-inline: 12px;
-    padding: 8px 24px;
-    cursor: pointer;
-
-    &:hover {
-      color: #4F58C9;
-      background-color: #E9EAF9;
-      border-radius: 4px;
+    @media (max-width: 899px) {
+      flex-direction: column;
+      gap: 6px;
     }
-  }
-
-  &-number {
-    display: flex;
-    gap: 15px;
-  }
-
-  &-log {
-    display: flex;
-    gap: 15px;
   }
 
   &-text {
@@ -41,10 +28,36 @@
     color: #4c4c4c;
     line-height: 18.2px;
   }
+
+  &-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-inline: 12px;
+    padding: 8px 24px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: #4F58C9;
+      background-color: #E9EAF9;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 899px) {
+      display: none;
+    }
+  }
 }
 
 .bold {
   line-height: 23.4px;
   font-size: 18px;
   font-weight: 600;
+}
+
+.phone {
+  @media (max-width: 899px) {
+    display: none;
+  }
 }

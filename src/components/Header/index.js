@@ -1,38 +1,42 @@
-import logo from '../../assets/icon/Logo.svg';
-import phone from '../../assets/icon/Phone.svg';
+import logoIcon from '../../assets/icon/Logo.svg';
+import phoneIcon from '../../assets/icon/Phone.svg';
 import {cn as bem} from '@bem-react/classname';
 import './style.scss';
 
 function Header () {
-    const cn = bem('Header');
+    const head = bem('Header');
 
     return (
-        <header className={cn()}>
-            <div className={cn('log')}>
-                <img src={logo} className={cn('logo')} alt="logo" />
-                <span>
-                <p className={cn('text')}>Современные методики</p>
-                <span className={cn('text')}>диагностики</span>
+        <header className={head()}>
+            
+            <div className={head('logo')}>
+                <img src={logoIcon} className={head('icon')} alt="logo" />
+                <span className={head('text')}>
+                    <span className={head('title')}>Современные методики</span>
+                    <span className={head('subtitle')}>диагностики</span>
                 </span>
             </div>
-            <nav>
-                <a className="Header-link" >
-                Лаборатория
+            
+            <nav className={head('navigation')}>
+                <a className={head('link')} href="#laboratory">
+                    Лаборатория
                 </a>
-                <a className="Header-link" >
-                Галерея
+                <a className={head('link')} href="#gallery">
+                    Галерея
                 </a>
-                <a className="Header-link" >
-                Оставить заявку
+                <a className={head('link')} href="#request">
+                    Оставить заявку
                 </a>
             </nav>
-            <div className='Header-number'>
-                <img src={phone} className="Header-logo" alt="phone" />
-                <span>
-                <p className={cn('text', 'bold')}>+7 123 456 7890</p>
-                <span className={cn('text')}>Звонок бесплатный</span>  
+
+            <div className={head('logo')}>
+                <img src={phoneIcon} className={head('icon')} alt="phone icon" />
+                <span className={head('text', 'phone')}>
+                    <p className={head('title', 'bold')}>+7 123 456 7890</p>
+                    <span className={head('subtitle')}>Звонок бесплатный</span>  
                 </span>
             </div>
+
         </header>
     );
 }

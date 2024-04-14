@@ -1,17 +1,24 @@
 .Baner {
     display: flex;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 260px;
+    padding-top: 68px;
+    gap: 285px;
+    background: url('../../assets/image/baner.png') no-repeat;
 
-    &-wrapper {
-        position: absolute;
-        top: 68px;
-        right: 385px;
+
+    @media (max-width: 899px) {
+        padding-inline: 21px;
+        flex-direction: column;
+        gap: 0px;
     }
 
     &-title {
-        position: absolute;
-        top: 210px;
-        left: 260px;
+        @media (max-width: 899px) {
+            order: 1;
+            margin-top: -53px;
+        }
     }
 
     &-dark {
@@ -22,6 +29,10 @@
         border-radius: 8px 8px 8px 0px;
         padding: 12px 18px;
         text-transform: uppercase;
+
+        @media (max-width: 899px) {
+            font-size: 24px;
+        }
     }
         
     &-light {
@@ -33,6 +44,28 @@
         padding: 12px 18px;
         text-transform: uppercase;
         width: fit-content;
+
+
+        @media (max-width: 899px) {
+            font-size: 24px;
+            background: rgba(233, 234, 249, 1);
+        }
+    }
+
+    &-btn {
+        background-color: #737BE1;
+        width: fit-content;
+        padding: 12px 18px;
+        border-radius: 8px;
+        color: #fff;
+        text-decoration: none;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    
+        cursor: pointer;
     }
 }
 
@@ -43,14 +76,34 @@
     line-height: 33.6px;
     text-align: center;
     font-style: italic;
+
+    @media (max-width: 899px) {
+        margin: 30px 18px;
+        font-size: 18px;
+    }
+}
+
+.test {
+   background: linear-gradient(0deg, #E9EAF9 0%, #F5F5FF 100%); 
+   padding: 48px 260px;
+
+   @media (max-width: 899px) {
+    padding: 36px 18px;
+  }
 }
 
 .About {
-    background: linear-gradient(0deg, #E9EAF9 0%, #F5F5FF 100%);
+    
     display: flex;
     justify-content: center;
-    padding: 48px 260px;
+    
     gap: 48px;
+
+    @media (max-width: 899px) {
+        flex-direction: column;
+        gap: 24px;
+    }
+
 }
 
 .inform {
@@ -61,26 +114,26 @@
     &-title {
         font-size: 36px;
         font-weight: 600;
+    
+        @media (max-width: 899px) {
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
     }
 
     &-text {
         font-size: 21px;
         font-weight: 400;
         margin-top: 18px;
+
+        @media (max-width: 899px) {
+            font-size: 18px;
+        }
     }
 
-    &-link {
-        background-color: #737BE1;
-        width: fit-content;
-        padding: 12px 18px;
-        border-radius: 8px;
-        color: #fff;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-
-        cursor: pointer;
+    &-img {
+        @media (max-width: 899px) {
+            order: -1;
+        }
     }
 }

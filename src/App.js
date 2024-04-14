@@ -1,19 +1,8 @@
-import Baner from './components/Baner';
-import Footer from './components/Footer';
-import Forma from './components/Forma';
-import Galerea from './components/Galerea';
-import Header from './components/Header';
-// import './App.scss';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Baner/>
-      <Galerea/>
-      <Forma/>
-      <Footer/>
-    </>
+    <Home />
   );
 }
 
