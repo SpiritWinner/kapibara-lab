@@ -16,26 +16,26 @@ function Galerea () {
         <section className='Galerea' id='gallery'>
             <h2 className='Galerea-title'>Галерея</h2>
             <div className={cn()}>
-                <div class="image-wrapper">
-                    <img className={cn('img1')} src={img1} alt="Image 1" />
+                <div className={cn('img1', 'image-wrapper')}>
+                    <img src={img1} alt="Image 1" />
                 </div>
-                <div class="image-wrapper">
-                    <img className={cn('img2')} src={img2} alt="Image 2" />
+                <div className={cn('img2', 'image-wrapper')}>
+                    <img src={img2} alt="Image 2" />
                 </div>
-                <div class="image-wrapper">
-                    <img className={cn('img3')} src={img3} alt="Image 3" />
+                <div className={cn('img3', 'image-wrapper')}>
+                    <img src={img3} alt="Image 3" />
                 </div>
-                <div class="image-wrapper">
-                    <img className={cn('img4')} src={img4} alt="Image 4" />
+                <div className={cn('img4', 'image-wrapper')}>
+                    <img src={img4} alt="Image 4" />
                 </div>
-                <div class="image-wrapper">
-                    <img className={cn('img5')} src={img5} alt="Image 5" />
+                <div className={cn('img5', 'image-wrapper')}>
+                    <img src={img5} alt="Image 5" />
                 </div>
-                <div class="image-wrapper">
-                    <img className={cn('img6')} src={img6} alt="Image 6" />
+                <div className={cn('img6', 'image-wrapper')}>
+                    <img src={img6} alt="Image 6" />
                 </div>
-                <div class="image-wrapper">
-                    <img className={cn('img7')} src={img7} alt="Image 7" />
+                <div className={cn('img7', 'image-wrapper')}>
+                    <img src={img7} alt="Image 7" />
                 </div>
             </div> 
         </section>

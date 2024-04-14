@@ -15,7 +15,10 @@
 
     &-logo {
         fill: #fff;
-        order: -1;
+        
+        @media (max-width: 899px) {
+            order: -1;
+        }
     }
 
     &-text {
