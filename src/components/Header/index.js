@@ -9,7 +9,7 @@ function Header () {
     return (
         <header className={head()}>
             
-            <div className={head('logo')}>
+            <div className={head('logo', 'fl')}>
                 <img src={logoIcon} className={head('icon')} alt="logo" />
                 <span className={head('text')}>
                     <span className={head('title')}>Современные методики</span>

@@ -7,6 +7,10 @@
   padding: 57px 260px;
   box-sizing: border-box;
 
+  @media (min-width: 900px) and (max-width: 1750px) {
+    padding: 40px 100px;
+  }
+
   @media (max-width: 899px) {
     padding: 30px 20px;
   }
@@ -28,7 +32,13 @@
     color: #4c4c4c;
     line-height: 18.2px;
     width: 180px;
+
     @media (max-width: 899px) {
+      width: unset;
+    }
+
+    @media (min-width: 900px) and (max-width: 1750px) {
+      font-size: 12px;
       width: unset;
     }
   }
@@ -51,6 +61,12 @@
     @media (max-width: 899px) {
       display: none;
     }
+
+    @media (min-width: 900px) and (max-width: 1750px) {
+      padding: 8px 12px;
+      font-size: 14px;
+      margin-inline: 5px;
+    }
   }
 }
 
@@ -58,10 +74,21 @@
   line-height: 23.4px;
   font-size: 18px;
   font-weight: 600;
+
+  @media (min-width: 900px) and (max-width: 1750px) {
+    font-size: 16px;
+  }
 }
 
 .phone {
   @media (max-width: 899px) {
     display: none;
+  }
+}
+
+.fl {
+  @media (min-width: 900px) and (max-width: 1750px) {
+    flex-direction: column;
+    gap: 6px;
   }
 }

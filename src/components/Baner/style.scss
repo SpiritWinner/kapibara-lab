@@ -14,6 +14,12 @@
         gap: 0px;
     }
 
+    @media (min-width: 900px) and (max-width: 1750px) {
+        padding-inline: 100px;
+        gap: 0px; 
+    }
+        
+
     &-title {
         @media (max-width: 899px) {
             order: 1;
@@ -33,6 +39,10 @@
         @media (max-width: 899px) {
             font-size: 24px;
         }
+
+        @media (min-width: 900px) and (max-width: 1750px) {
+            font-size: 28px;
+        }
     }
         
     &-light {
@@ -49,6 +59,10 @@
         @media (max-width: 899px) {
             font-size: 24px;
             background: rgba(233, 234, 249, 1);
+        }
+
+        @media (min-width: 900px) and (max-width: 1750px) {
+            font-size: 28px;
         }
     }
 
@@ -81,6 +95,12 @@
         margin: 30px 18px;
         font-size: 18px;
     }
+
+    @media (min-width: 900px) and (max-width: 1750px) {
+        font-size: 24px;
+        margin: 57px 100px;
+    }
+
 }
 
 .test {
@@ -89,6 +109,10 @@
 
    @media (max-width: 899px) {
     padding: 36px 18px;
+  }
+
+  @media (min-width: 900px) and (max-width: 1750px) {
+    padding: 36px 100px;
   }
 }
 
@@ -119,6 +143,10 @@
             font-size: 28px;
             margin-bottom: 24px;
         }
+
+        @media (min-width: 900px) and (max-width: 1750px) {
+            font-size: 32px;
+        }
     }
 
     &-text {
@@ -128,6 +156,10 @@
 
         @media (max-width: 899px) {
             font-size: 18px;
+        }
+
+        @media (min-width: 900px) and (max-width: 1750px) {
+            font-size: 19px;
         }
     }
 
